@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JavaScript Fundamentals</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <nav id="navbar">
+        <header>JavaScript Docs</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+        <a class="nav-link" href="#Functions">Functions</a>
+        <a class="nav-link" href="#Loops">Loops</a>
+        <a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a>
+    </nav>
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>
+                JavaScript is a powerful scripting language used in web development. It runs in the browser and allows dynamic behavior on websites. JavaScript can be used for both front-end and back-end development. It's supported by all modern browsers. Learning JavaScript is essential for becoming a full stack developer.
+            </p>
+            <ul>
+                <li>Client-side scripting</li>
+                <li>High-level language</li>
+                <li>Interpreted and event-driven</li>
+                <li>Used with HTML and CSS</li>
+                <li>Rich ecosystem</li>
+            </ul>
+            <code>console.log("Hello, JavaScript!");</code>
+        </section>
+
+        <section class="main-section" id="Variables_and_Data_Types">
+            <header>Variables and Data Types</header>
+            <p>
+                You can declare variables using <code>let</code>, <code>const</code>, and <code>var</code>. JavaScript supports various data types: string, number, boolean, object, null, undefined. Type coercion is automatic in some operations. Use <code>typeof</code> to check variable types.Best practice is to prefer <code>let</code> and <code>const</code>.
+            </p>
+            <ul>
+                <li>String: "Hello"</li>
+                <li>Number: 42</li>
+                <li>Boolean: true</li>
+                <li>Object: { key: value }</li>
+                <li>Undefined / Null</li>
+            </ul>
+            <code>let name = "Davide";</code>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>
+                Functions allow you to reuse code and structure your logic. You can define them with function declarations or expressions. Arrow functions are a concise syntax introduced in ES6. Functions can return values and accept parameters.Functions can be passed as arguments (first-class citizens).
+            </p>
+            <ul>
+                <li>function declaration</li>
+                <li>arrow function</li>
+                <li>callback function</li>
+                <li>anonymous function</li>
+                <li>IIFE</li>
+            </ul>
+            <code>function greet(name) { return "Hello " + name; }</code>
+        </section>
+
+        <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <p>
+            Loops let you run code multiple times based on conditions. JavaScript supports <code>for</code>, <code>while</code>, and <code>do...while</code> loops. You can use <code>break</code> and <code>continue</code> to control flow. Iterating over arrays is common with <code>for...of</code> and <code>forEach</code>. Be careful with infinite loops!
+        </p>
+        <ul>
+            <li>for</li>
+            <li>while</li>
+            <li>do...while</li>
+            <li>for...of</li>
+            <li>Array.forEach()</li>
+        </ul>
+        <code>for(let i=0; i<5; i++){ console.log(i); }</code>
+        </section>
+
+        <section class="main-section" id="DOM_Manipulation">
+            <header>DOM Manipulation</header>
+            <p>
+                The DOM is a representation of the HTML structure as objects. You can access and modify elements with JavaScript. Common methods include <code>getElementById</code>, <code>querySelector</code>. You can change text, styles, and attributes dynamically. Event listeners allow interaction handling.
+            </p>
+            <ul>
+                <li>document.getElementById()</li>
+                <li>document.querySelector()</li>
+                <li>element.innerText</li>
+                <li>element.style</li>
+                <li>addEventListener()</li>
+            </ul>
+            <code>document.getElementById("btn").addEventListener("click", handleClick);</code>
+        </section>
+  </main>
+</body>
+</html>
